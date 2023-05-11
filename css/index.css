@@ -896,6 +896,11 @@ body {
   background: url("../img/WhyBackground.jpg") no-repeat center/cover;
   color: #FFF;
 }
+@media screen and (max-width: 768px) {
+  .section-why {
+    display: none;
+  }
+}
 @media screen and (min-width: 1400px) {
   .section-why {
     background: url(../img/WhyBackground@2x.jpg) no-repeat center/cover;
@@ -903,6 +908,7 @@ body {
 }
 .section-why .why-content {
   max-width: 648px;
+  margin: 0;
 }
 .section-why .why-content .why--h2 {
   padding-top: 190px;
@@ -947,11 +953,9 @@ body {
   width: 424px;
   padding-top: 112px;
 }
-.section-why .why--img :last-child {
-  margin: 16px 116px 112px 0;
-}
 .section-why .why--img .padwhyimg1 {
-  max-width: 320px;
+  width: 320px;
+  margin: 0;
 }
 .section-why .why--img .padwhyimg2 {
   width: 320px;
@@ -963,4 +967,155 @@ body {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  margin: 16px 0 0 116px;
+}
+
+.section-why1 {
+  background: url("../img/WhyBackground.jpg") no-repeat center/cover;
+  color: #FFF;
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .section-why1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .section-why1 {
+    background: url(../img/WhyBackground@2x.jpg) no-repeat center/cover;
+  }
+}
+.section-why1 .why--img1 {
+  margin: 0;
+  width: 720px;
+  padding-top: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.section-why1 .why--img1 .padwhyimg1 {
+  width: 348px;
+  margin: 0;
+}
+.section-why1 .why--img1 .padwhyimg2 {
+  width: 348px;
+  margin: 16px 116px 0 0;
+}
+.section-why1 .why-content1 {
+  max-width: 720px;
+  margin: 0 auto;
+}
+.section-why1 .why-content1 .why--h2 {
+  padding-top: 32px;
+  padding-bottom: 0px;
+  font-family: "Aleo";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+}
+.section-why1 .why-content1 .why--p {
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: 0.1em;
+  color: #FFF;
+}
+.section-why1 .why-content1 .why-padtop1 {
+  padding-top: 24px;
+}
+.section-why1 .why-content1 .why--place {
+  padding-top: 32px;
+  padding-bottom: 60px;
+}
+.section-why1 .why-content1 .why--place .why--button {
+  padding: 20px 32px;
+  font-family: "Aleo";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background: #5373FD;
+}
+
+.section-steps {
+  background: #333333;
+}
+.section-steps .step-svg {
+  padding-top: 60px;
+}
+.section-steps .step1-svg {
+  margin-top: -15px;
+}
+.section-steps .step1-h2 {
+  padding-top: 20px;
+  padding-bottom: 59px;
+  font-family: "Aleo";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.section-book {
+  background: url("../img/book1.jpg") no-repeat center/cover;
+  color: #FFF;
+}
+@media screen and (min-width: 1400px) {
+  .section-book {
+    background: url(../img/book2@2x.jpg) no-repeat center/cover;
+  }
+}
+.section-book .book-content {
+  padding-top: 220px;
+  padding-bottom: 120px;
+}
+.section-book .book-content .book-text {
+  margin: 0;
+  padding-left: 32px;
+  width: 648px;
+  background: rgba(35, 35, 35, 0.9);
+}
+.section-book .book-content .book-text .book1-h6 {
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: 0.1em;
+  color: #FFFFFF;
+  padding-top: 44px;
+}
+.section-book .book-content .book-text .book1-h5 {
+  padding-top: 16px;
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+.section-book .book-content .book-text .book1-p {
+  padding-top: 16px;
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: 0.1em;
+  color: #FFFFFF;
 }

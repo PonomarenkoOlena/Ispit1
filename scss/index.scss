@@ -103,12 +103,17 @@
 .section-why {
 	background: url('../img/WhyBackground.jpg') no-repeat center/cover;
 		color: #FFF;
+		@media screen and (max-width: 768px) {
+				display: none;
+			}
 
 		@media screen and (min-width: 1400px) {
 			background: url(../img/WhyBackground@2x.jpg) no-repeat center/cover;
 		}
 		.why-content {
 			max-width: 648px;
+			margin: 0;
+			
 			.why--h2 {
 				padding-top: 190px;
 				padding-bottom: 0px;
@@ -152,25 +157,169 @@
 			margin: 0;
 			width: 424px;
 			padding-top: 112px;
-			:last-child {
-				margin: 16px 116px 112px 0;
-			}
-			
-				.padwhyimg1 {
-					
-					max-width: 320px;
+						
+				.padwhyimg1 {					
+					width: 320px;
+					margin: 0;
 					// align-content: flex-start;
 				}
-				.padwhyimg2 {
-					
+				.padwhyimg2 {					
 					width: 320px;
 					display: flex;
 					align-content: flex-end;
-					justify-content: flex-end
-					
-				}
-			
+					justify-content: flex-end;
+					margin: 16px 0 0 116px;
+				}			
+		}		
+}
+
+.section-why1 {
+	background: url('../img/WhyBackground.jpg') no-repeat center/cover;
+	color: #FFF;
+	display: none;
+
+	@media screen and (max-width: 768px) {
+		display: flex;
+	}
+
+	@media screen and (min-width: 1400px) {
+		background: url(../img/WhyBackground@2x.jpg) no-repeat center/cover;
+	}
+
+	.why--img1 {
+		margin: 0;
+		width: 720px;
+		padding-top: 60px;
+		display: flex;
+		justify-content: space-between;
+		.padwhyimg1 {
+			width: 348px;
+			margin: 0;
 		}
-		
+		.padwhyimg2 {
+			width: 348px;			
+			margin: 16px 116px 0 0;
+		}
+
+	}
+	.why-content1 {
+		max-width: 720px;
+		margin: 0 auto;
+
+
+		.why--h2 {
+			padding-top: 32px;
+			padding-bottom: 0px;
+			font-family: 'Aleo';
+			font-style: normal;
+			font-weight: 400;
+			font-size: 36px;
+			line-height: 40px;
+		}
+
+		.why--p {
+			font-family: 'Josefin Sans';
+			font-style: normal;
+			font-weight: 300;
+			font-size: 16px;
+			line-height: 28px;
+			letter-spacing: 0.1em;
+			color: #FFF;
+		}
+
+		.why-padtop1 {
+			padding-top: 24px;
+		}
+
+		.why--place {
+			padding-top: 32px;
+			padding-bottom: 60px;
+
+			.why--button {
+				padding: 20px 32px;
+				font-family: 'Aleo';
+				font-style: normal;
+				font-weight: 400;
+				font-size: 16px;
+				line-height: 20px;
+				text-align: center;
+				letter-spacing: 0.07em;
+				text-transform: uppercase;
+				color: #FFFFFF;
+				background: #5373FD;
+			}
+		}
+	}
+
+}
+
+.section-steps {
+	background: #333333;
+	.step-svg {
+		padding-top: 60px;
+	}
+	.step1-svg {
+		margin-top: -15px;		
+	}
+	.step1-h2 {
+		padding-top: 20px;
+		padding-bottom: 59px;
+		font-family: 'Aleo';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 36px;
+		line-height: 40px;
+		text-align: center;
+		color: #FFFFFF;
+	}
+}
+
+.section-book {
+	background: url('../img/book1.jpg') no-repeat center/cover;
+		color: #FFF;
+	
+		@media screen and (min-width: 1400px) {
+			background: url(../img/book2@2x.jpg) no-repeat center/cover;
+		}
+	.book-content {
+		padding-top: 220px;
+		padding-bottom: 120px;
+		.book-text {	
+			margin: 0;	
+			padding-left: 32px;	
+			width: 648px;
+			background: rgba(35, 35, 35, 0.9);
+			.book1-h6 {
+				font-family: 'Josefin Sans';
+				font-style: normal;
+				font-weight: 300;
+				font-size: 20px;
+				line-height: 28px;
+				letter-spacing: 0.1em;
+				color: #FFFFFF;
+				padding-top: 44px;
+			}
+			.book1-h5 {
+				padding-top: 16px;
+				font-family: 'Josefin Sans';
+				font-style: normal;
+				font-weight: 400;
+				font-size: 20px;
+				line-height: 28px;
+				text-transform: uppercase;			
+				color: #FFFFFF;
+			}
+			.book1-p {
+				padding-top: 16px;
+				font-family: 'Josefin Sans';
+				font-style: normal;
+				font-weight: 300;
+				font-size: 16px;
+				line-height: 28px;
+				letter-spacing: 0.1em;
+				color: #FFFFFF;
+			}
+		}
+	}
 }
 
