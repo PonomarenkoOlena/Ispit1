@@ -1,0 +1,54 @@
+@use 'helpers' as *;
+
+.container { //111
+  max-width: 1340px; //111
+  margin: 0 auto; //111
+  padding: 0 10px; //111
+}
+
+.row {
+  display: flex;
+  @include flex-box(row, initial, 30, true);
+   @media screen and (max-width: 768px) {
+    @include flex-box(none, flex-end, 30, true);
+   }
+
+}
+
+.col {
+  flex: 1;
+  min-width: 300px;
+}
+
+.justify-between {
+  @include flex-box(row, space-between)
+}
+
+.align-center {
+  align-items: center;
+}
+
+.text-center { //111
+  text-align: center;
+}
+
+.margin0 {
+  margin: 0 auto;
+}
+
+.container-flex {
+  display: flex;
+  gap: 12px;
+}
+
+.flex-end {
+  @media screen and (max-width: 768px) {
+    justify-content: flex-end;
+  }
+}
+
+.wrap-reverse-tablet {
+  @media screen and (max-width: 768px) {
+    flex-wrap: wrap-reverse;
+  }
+}

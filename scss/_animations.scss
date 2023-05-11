@@ -1,0 +1,66 @@
+@use 'helpers/' as *;
+
+@keyframes box-shadow {
+  from {
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  to {
+    box-shadow: 0 30px 30px rgba(0, 0, 0, 0.3);
+  }
+}
+
+@keyframes background-color {
+  0% {
+    background-color: $primary-color;
+    // opacity: 0.25;
+  }
+
+  25% {
+    // background-color: red;
+    background-color: darken($primary-color, 10%);
+    // opacity: 0.5;
+  }
+
+
+  50% {
+    // background-color: green;
+    background-color: darken($primary-color, 20%);
+    // opacity: 0.75;
+  }
+
+  75% {
+    // background-color: yellow;
+    background-color: darken($primary-color, 30%);
+    // opacity: 0.75;
+  }
+
+  100% {
+    background-color: darken($primary-color, 40%);
+    // background-color: blue;
+    // opacity: 1;
+  }
+}
+
+
+@keyframes moveX {
+  0% {
+    left: 100%;
+    transform: scale(0.25);
+  }
+
+  50% {
+    transform: scale(0.5);
+    // left: 50%;
+  }
+
+  75% {
+    transform: scale(0.75);
+    // left: 50%;
+  }
+
+  100% {
+    left: 0;
+    transform: scale(1);
+  }
+}

@@ -1,0 +1,61 @@
+@use 'helpers' as *;
+
+.heading { //111
+  font-family: $heading-font;
+  //margin: 5px 0 10px;
+
+  &--h1 { //111
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 52px;
+  }
+
+  &--h2 {
+    font-size: 38px;
+    letter-spacing: -0.5px;
+    line-height: 52px;
+  }
+
+  &--h3 { //111
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0.1em;
+    @media screen and (max-width: 768px) {
+     text-align: center;
+   }
+  }
+
+  &--h5 {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 28px;
+    letter-spacing: 0.31em;
+  }
+  &--h9 {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.2em;
+  }
+}
+
+.uppercase { //111
+  text-transform: uppercase;
+}
+
+.subtitle {
+  color: $secondary-color;
+  font-weight: 600;
+  line-height: 22px;
+  margin-bottom: 0;
+}
+
+.description {
+  margin-bottom: 20px;
+  max-width: 470px;
+
+  @media screen and (max-width: 576px) {
+    max-width: 100%;
+  }
+}

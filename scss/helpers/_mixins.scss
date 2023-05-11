@@ -1,0 +1,21 @@
+@mixin box-shadow($x: 0, $y: 0, $blur: 0, $color: rgba(0, 0, 0, 0.3)) {
+  box-shadow: $x $y $blur $color;
+}
+
+@mixin flex-box($direction: row, $justify: initial, $gap: 0, $wrap: false) {
+  flex-direction: $direction;
+  justify-content: $justify;
+  gap: #{$gap}px;
+
+  @if $wrap {
+    flex-wrap: wrap;
+  }
+}
+
+@mixin padding-y($y) {
+  padding: #{$y}px 0;
+}
+
+@mixin padding-x($x) {
+  padding: 0 #{$x}px;
+}

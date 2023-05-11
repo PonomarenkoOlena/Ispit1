@@ -1,0 +1,21 @@
+@use 'helpers' as *;
+
+*,*:after,*:before {
+  box-sizing: border-box;  
+  margin: 0 auto;
+}
+
+body {
+  font-family: $main-font;
+  // color: $dark-color;
+  font-weight: 400;
+}
+
+// p {
+//   color: rgba($dark-color, 0.9);
+// }
+
+// img {
+//   max-width: 100%;
+//   width: 100%;
+// }

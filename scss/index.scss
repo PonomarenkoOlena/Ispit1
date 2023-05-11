@@ -1,0 +1,176 @@
+@use 'normalize';
+@use 'base';
+@use 'font';
+@use 'layout';
+@use 'modules';
+@use 'typography';
+@use 'grid';
+@use 'media';
+@use 'animations';
+
+.header {
+	background: url('../img/HeaderBackground.jpg') no-repeat center/cover;
+	color: #FFF;
+	@media screen and (min-width: 1400px) {
+      background: url(../img/HeaderBackground@2x.jpg) no-repeat center/cover;
+  	}    
+	.header--h1 {
+	  padding-top: 295px;
+	  padding-bottom: 8px;
+	}
+	.header--form {
+	  padding-top: 48px;
+	}
+	.heading-h9 {
+	  padding-top: 211px;
+	  padding-bottom: 8px;
+	}
+	.scroll{
+		padding-bottom: 120px;
+	}
+	.cf:before,
+	.cf:after {
+	    content:"";
+	    display:table;
+	}
+	.cf:after {
+	    clear:both;
+	}
+	.searchform {
+	    background:#ffffff;
+	    padding: 2px 3px;
+	    width:647px;
+	    @media screen and (max-width: 680px) {
+	    	width: calc(100% - 36px);
+	    } 
+      	@media screen and (max-width: 560px) {
+	    	display: flex;
+		    align-items: center;
+		    flex-direction: column;
+		    text-align: center;
+	    }  
+	}
+	.searchform input {    
+	    border: none;
+	    font-family: 'Josefin Sans';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 14px;
+		// line-height: 20px;
+		letter-spacing: 0.2em;
+		color: #999999;
+	    padding: 20px 33px;
+	    width: 77%;
+	    @media screen and (max-width: 680px) {
+	    	width: 72%;
+	    }  
+	    @media screen and (max-width: 560px) {
+	    	width: 100%;
+	    	text-align: center;
+	    }  
+	}
+	.searchform input:focus {
+	    outline: none;
+	    box-shadow:0 0 4px #000 inset;
+	}
+	.searchform button {
+	    background: #5373FD;    
+	    border: none;
+	    font-family: 'Aleo';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 14px;
+		// line-height: 20px;
+		letter-spacing: 0.1em;
+		text-transform: uppercase;
+		color: #FFFFFF;
+	    cursor: pointer;
+	    padding: 16px 24px;
+        display: inline-block;
+    	gap: 12px;
+    	display: table-cell;
+    	vertical-align: middle;
+    	transition: 1s;
+	}
+	.searchform button:hover {
+	    transform: scale(1.5);
+	}
+	.button--img {
+		width: 16px;
+	}
+}
+
+.section-why {
+	background: url('../img/WhyBackground.jpg') no-repeat center/cover;
+		color: #FFF;
+
+		@media screen and (min-width: 1400px) {
+			background: url(../img/WhyBackground@2x.jpg) no-repeat center/cover;
+		}
+		.why-content {
+			max-width: 648px;
+			.why--h2 {
+				padding-top: 190px;
+				padding-bottom: 0px;
+				font-family: 'Aleo';
+				font-style: normal;
+				font-weight: 400;
+				font-size: 36px;
+				line-height: 40px;
+			}
+			.why--p {
+				font-family: 'Josefin Sans';
+				font-style: normal;
+				font-weight: 300;
+				font-size: 16px;
+				line-height: 28px;
+				letter-spacing: 0.1em;
+				color: #FFF;
+			}
+			.why-padtop1 {
+				padding-top: 24px;
+			}
+			.why--place {
+				padding-top: 32px;
+				padding-bottom: 190px;
+				.why--button {
+					padding: 20px 32px;
+					font-family: 'Aleo';
+					font-style: normal;
+					font-weight: 400;
+					font-size: 16px;
+					line-height: 20px;
+					text-align: center;
+					letter-spacing: 0.07em;
+					text-transform: uppercase;			
+					color: #FFFFFF;
+					background: #5373FD;
+				}
+			}
+		}
+		.why--img {
+			margin: 0;
+			width: 424px;
+			padding-top: 112px;
+			:last-child {
+				margin: 16px 116px 112px 0;
+			}
+			
+				.padwhyimg1 {
+					
+					max-width: 320px;
+					// align-content: flex-start;
+				}
+				.padwhyimg2 {
+					
+					width: 320px;
+					display: flex;
+					align-content: flex-end;
+					justify-content: flex-end
+					
+				}
+			
+		}
+		
+}
+
